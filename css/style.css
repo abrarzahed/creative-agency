@@ -159,11 +159,21 @@ a {
 .header {
   flex-direction: row;
   margin-top: 0;
+  min-height: 100vh;
 }
 
 @media (max-width: 1060px) {
   .header {
     padding: 100px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -189,6 +199,12 @@ section .home-img {
   height: 110%;
 }
 
+@media (max-width: 768px) {
+  section .home-img {
+    display: none;
+  }
+}
+
 section .home-content {
   z-index: 5;
   max-width: 650px;
@@ -197,11 +213,7 @@ section .home-content {
 
 @media (max-width: 1060px) {
   section .home-content {
-    background: rgba(255, 255, 255, 0.582);
     padding: 10px 30px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    margin-top: 80px;
   }
 }
 
